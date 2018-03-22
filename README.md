@@ -23,35 +23,9 @@ Pagal galutinį balą surūšiuokite (padalinkite) studentus į dvi kategorija
 
 Išmatuokite (kuo tiksliau) visos programos (t.y. failų sukūrimą irgi reikia matuoti) veikimo laiką testuojant su šiais keturiais skirtingo dydžio duomenų failais.
 
-| Funkcija | n = 10 |
-| ---- | ----|
-| Generavimas |  0.0158533 s|
-| Skaitymas |  0.005476 s|
-| Galutinio balo skaiciavimas | 3.3777e-05 s |
-| Skirstymas | 0.000237333 s| 
-
-#Failo 0 generavimo laikas: 0.0158533 s
-#Failo 0 skaitymo laikas: 0.005476 s
-#Failo 0 Galutinio balo skaiciavimo laikas: 3.3777e-05 s
-#Failo 0 skirstymo laikas: 0.000237333 s
-#___________________________________
-#Failo 1 generavimo laikas: 0.0216818 s
-#Failo 1 skaitymo laikas: 0.0148867 s
-#Failo 1 Galutinio balo skaiciavimo laikas: 0.000336889 s
-#Failo 1 skirstymo laikas: 0.00239067 s
-#___________________________________
-#Failo 2 generavimo laikas: 0.151053 s
-#Failo 2 skaitymo laikas: 0.096084 s
-#Failo 2 Galutinio balo skaiciavimo laikas: 0.003184 s
-#Failo 2 skirstymo laikas: 0.0208689 s
-#___________________________________
-#Failo 3 generavimo laikas: 1.37125 s
-#Failo 3 skaitymo laikas: 0.930283 s
-#Failo 3 Galutinio balo skaiciavimo laikas: 0.029408 s
-#Failo 3 skirstymo laikas: 0.23731 s
-#___________________________________
-#Failo 4 generavimo laikas: 13.4309 s
-#Failo 4 skaitymo laikas: 9.37558 s
-#Failo 4 Galutinio balo skaiciavimo laikas: 0.306129 s
-#Failo 4 skirstymo laikas: 2.67215 s
-#
+| Funkcija | n = 10 | n = 100 | n = 1000 | n = 10000 | n = 100000 | 
+| ----------------| ----- | ----- | ----- | ----- | ----- | ----- |
+| Generavimas |  0.0158533 s| 0.0216818 s| 0.151053 s | 1.37125 s | 13.4309 s |
+| Skaitymas |  0.005476 s| 0.0148867 s | 0.096084 s | 0.930283 s |  9.37558 s |
+| Galutinio balo skaiciavimas | 3.3777e-05 s |  0.000336889 s| 0.003184 s| 0.029408 s | 0.306129 s |
+| Skirstymas | 0.000237333 s| .00239067 s | 0.0208689 s|  0.23731 s | 2.67215 s |
