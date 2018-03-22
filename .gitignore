@@ -6,6 +6,15 @@
 *.lo
 *.o
 *.obj
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.log
+*.tlog
+*.idb
+*.pdb
+*.lastbuildstate
+*.ilk
 
 # Precompiled Headers
 *.gch
@@ -30,3 +39,9 @@
 *.exe
 *.out
 *.app
+
+#folders
+
+.vs/
+Debug/
+txt/*
