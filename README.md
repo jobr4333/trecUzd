@@ -22,9 +22,9 @@ Pagal galutinį balą surūšiuokite (padalinkite) studentus į dvi kategorija
 Į studentus, kurių galutinis balas < 5.0
 
 Išmatuokite (kuo tiksliau) visos programos (t.y. failų sukūrimą irgi reikia matuoti) veikimo laiką testuojant su šiais keturiais skirtingo dydžio duomenų failais.
------------------------------------------------------------
-| Funkcija | n = 10 | n = 100 | n = 1000 | n = 10000 | n = 100000 | 
-----------------------------------------------------------
+
+| Funkcija | n = 10 |
+| ---- | ----|
 | Generavimas |  0.0158533 s|
 | Skaitymas |  0.005476 s|
 | Galutinio balo skaiciavimas | 3.3777e-05 s |
