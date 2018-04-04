@@ -11,6 +11,7 @@
 #include <vector>
 #include <sstream>
 #include <fstream>
+#include <chrono>
 
 using std::cout;
 using std::cin;
@@ -25,6 +26,7 @@ using std::setw;
 using std::left;
 using std::exception;
 using std::to_string;
+using std::left;
 
 void skaitymas(int iter);
 void rikioti();
