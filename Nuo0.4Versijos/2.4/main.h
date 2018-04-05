@@ -8,6 +8,7 @@
 #include <vector>
 #include <sstream>
 #include <fstream>
+#include <list>
 
 using std::cout;
 using std::endl;
@@ -19,6 +20,7 @@ using std::setprecision;
 using std::setw;
 using std::left;
 using std::exception;
+using std::list;
 
 struct studentas {
 	string vardas;

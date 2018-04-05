@@ -69,27 +69,29 @@ void spausdinti(int iter) {
 	for (size_t i = 0; i != kietas.size(); ++i) {
 		rs << kietas[i].vardas << " " << kietas[i].pavarde << " ";
 		/*for (size_t t = 0; t != stud[i].pazymiai.size(); ++t) {
-			cout << stud[i].pazymiai[t] << " ";
+		cout << stud[i].pazymiai[t] << " ";
 		}*/
 		rs << kietas[i].vidurkis << " " << kietas[i].galBalas;
 		rs << endl;
 	}
 	rs << endl;
+	kietas.clear();
 }
 
 void sunaikinti() {
 	stud.clear();
 }
+
 void irasytiFailan(int pazymiuSkaicius, int iter) {
 	auto start = std::chrono::high_resolution_clock::now(); //laiko matavimo start
 	int studentuSkaicius = static_cast<int>(round(10 * pow(10, iter)));  //kitame faile bus 10x daugiau studentu
 
 	ofstream rs("txt/sudentai" + to_string(iter) + ".txt"); //generuojamas failo pavadinimas
-	
-	for (size_t p = 0;  p != studentuSkaicius; ++p) { // stud.size() = studentu skaicius faile = (1 * 10^i)
+
+	for (size_t p = 0; p != studentuSkaicius; ++p) { // stud.size() = studentu skaicius faile = (1 * 10^i)
 		auto temp = to_string(p);
-		rs << "Vardas" + temp  + " " << "Pavarde" + temp + " "; //generuojami vardai ir pavardes
-	
+		rs << "Vardas" + temp + " " << "Pavarde" + temp + " "; //generuojami vardai ir pavardes
+
 		for (size_t t = 0; t != pazymiuSkaicius; ++t) { //irasomi pazymiai
 			rs << randomPazymys() << " ";
 		}
@@ -107,12 +109,12 @@ void skaiciuotiGalutiniBala(int pazymiuSkaicius, int iter) {
 	float vid{};
 
 	for (size_t p = 0; p != studentuSkaicius; ++p) {
-		for (size_t t = 0; t != pazymiuSkaicius-1; ++t) {
+		for (size_t t = 0; t != pazymiuSkaicius - 1; ++t) {
 			vid = vid + stud[p].pazymiai[t];
 		}
 		vid = vid / pazymiuSkaicius;
 		stud[p].vidurkis = vid;
-		stud[p].galBalas = static_cast<float>(vid*0.4 + stud[p].pazymiai[pazymiuSkaicius-1] * 0.6);
+		stud[p].galBalas = static_cast<float>(vid*0.4 + stud[p].pazymiai[pazymiuSkaicius - 1] * 0.6);
 	}
 	auto finish = std::chrono::high_resolution_clock::now();//laiko matavimo finish
 	std::chrono::duration<double> elapsed = finish - start;
