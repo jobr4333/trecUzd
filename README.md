@@ -2,7 +2,7 @@
 
 # Vertinimas
 
-- Truksta cmake
+- Truksta cmake (komentarai kaip atsisiusti/idiegti programa)
 - Truksta releasu
 - Exceptionai galutineje versijoje "dingo"
 
