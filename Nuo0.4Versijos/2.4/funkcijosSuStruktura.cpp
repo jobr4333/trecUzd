@@ -121,9 +121,8 @@ void skaiciuotiGalutiniBala(int pazymiuSkaicius, int iter) {
 	cout << left << setw(40) << "skaiciuotiGalutiniBala vykdymo laikas " << iter << ": " << elapsed.count() << " s" << endl;
 }
 
-void kietasArNe(int pazymiuSkaicius, int iter) {
+void kietasArNe(int pazymiuSkaicius, int iter, int i) {
 	auto start = std::chrono::high_resolution_clock::now(); //laiko matavimo start
-	unsigned i{}, n{};
 	int studentuSkaicius = static_cast<int>(round(10 * pow(10, iter)));
 	for (size_t p = 0; p != studentuSkaicius; ++p) {
 		if (stud[p].galBalas >= 5.0) kietas.push_back(stud[p]);

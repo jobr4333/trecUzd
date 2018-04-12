@@ -23,6 +23,6 @@ void skaitymasDeque(int iter);
 void spausdintiDeque(int iter);
 void sunaikintiDeque();
 void skaiciuotiGalutiniBalaDeque(int pazymiuSkaicius, int iter);
-void kietasArNeDeque(int pazymiuSkaicius, int iter);
+void kietasArNeDeque(int pazymiuSkaicius, int iter, int i);
 
 

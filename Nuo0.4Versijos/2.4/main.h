@@ -21,12 +21,16 @@ using std::setw;
 using std::left;
 using std::exception;
 using std::list;
+using std::copy_if;
+using std::remove_if;
+using std::back_inserter;
 
 struct studentas {
 	string vardas;
 	string pavarde;
 	vector <int> pazymiai;
-	float vidurkis{}, mediana{}, galBalas{};
+	int egz;
+	double vidurkis{}, mediana{}, galBalas{};
 };
 
 #endif // MAIN_H_INCLUDED
