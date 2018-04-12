@@ -34,5 +34,4 @@ Išmatuokite (kuo tiksliau) visos programos (t.y. failų sukūrimą irgi reikia
 
 |Konteineris |I Strategija | II strategija| 
 | ----------------| ------------ |  ------------ 
-| Vektoriai |  [Imgur](https://i.imgur.com/1MsvFdf.png) | <a href="https://imgur.com/SMFWVna"><img src="https://i.imgur.com/SMFWVna.png" title="source: imgur.com" /></a>
-
+| Vektoriai |  ![alt text](https://i.imgur.com/1MsvFdf.png) | ![alt text](https://imgur.com/1MsvFdf)
