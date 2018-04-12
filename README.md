@@ -30,3 +30,10 @@ Išmatuokite (kuo tiksliau) visos programos (t.y. failų sukūrimą irgi reikia
 | Galutinio balo skaiciavimas | 3.3777e-05 s |  0.000336889 s| 0.003184 s| 0.029408 s | 0.306129 s |
 | Skirstymas | 0.000237333 s| .00239067 s | 0.0208689 s|  0.23731 s | 2.67215 s |
 
+0.5 VERSIJA kartu su 1.0
+
+|I Strategija | II strategija| 
+| ----------------| ------------ |
+| https://i.imgur.com/1MsvFdf.png | https://i.imgur.com/SMFWVna.png|
+
+
