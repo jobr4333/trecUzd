@@ -29,3 +29,11 @@ Išmatuokite (kuo tiksliau) visos programos (t.y. failų sukūrimą irgi reikia
 | Skaitymas |  0.005476 s| 0.0148867 s | 0.096084 s | 0.930283 s |  9.37558 s |
 | Galutinio balo skaiciavimas | 3.3777e-05 s |  0.000336889 s| 0.003184 s| 0.029408 s | 0.306129 s |
 | Skirstymas | 0.000237333 s| .00239067 s | 0.0208689 s|  0.23731 s | 2.67215 s |
+
+0.5 VERSIJA kartu su 1.0
+
+|Konteineris |I Strategija | II strategija| 
+| ----------------| ------------ |  ------------ |
+| Vektoriai |  ![alt text](https://i.imgur.com/1MsvFdf.png) | ![alt text](https://i.imgur.com/SMFWVna.png) |
+| Listai |  ![alt text](https://i.imgur.com/1JizkZE.png) | ![alt text](https://i.imgur.com/7sY86QQ.png)
+| Dekai | ![alt text](https://i.imgur.com/83ZQOUy.png) | ![alt text](https://i.imgur.com/PVikyKP.png) |
