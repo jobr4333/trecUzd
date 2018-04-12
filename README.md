@@ -1,5 +1,13 @@
 # Projektas (antra objektinio programavimo užduotis)
 
+# Vertinimas
+
+- Truksta cmake
+- Truksta releasu
+- Exceptionai galutineje versijoje "dingo"
+
+- O visa kita lyg ir nieko 
+
 **V0.3
 Versijos (v0.2) kodo reorganizavimas refactoringas:**
 Kur tikslinga, programoje naudokite (jeigu dar nenaudojote) struct'ūras
