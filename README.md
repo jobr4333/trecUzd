@@ -33,5 +33,7 @@ Išmatuokite (kuo tiksliau) visos programos (t.y. failų sukūrimą irgi reikia
 0.5 VERSIJA kartu su 1.0
 
 |Konteineris |I Strategija | II strategija| 
-| ----------------| ------------ |  ------------ 
-| Vektoriai |  ![alt text](https://i.imgur.com/1MsvFdf.png) | ![alt text](https://imgur.com/1MsvFdf)
+| ----------------| ------------ |  ------------ |
+| Vektoriai |  ![alt text](https://i.imgur.com/1MsvFdf.png) | ![alt text](https://i.imgur.com/SMFWVna.png) |
+| Listai |  ![alt text] (https://i.imgur.com/1JizkZE.png) | ![alt text] (https://i.imgur.com/7sY86QQ.png)
+| Dekai | ![alt text] (https://i.imgur.com/83ZQOUy.png) | ![alt text] (https://i.imgur.com/PVikyKP.png) |
