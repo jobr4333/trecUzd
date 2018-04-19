@@ -1,0 +1,4 @@
+C:/Users/Base/Desktop/GitProjektas/Projektas/Bin/CMakeFiles/antra_uzd.dir
+C:/Users/Base/Desktop/GitProjektas/Projektas/Bin/CMakeFiles/opop.dir
+C:/Users/Base/Desktop/GitProjektas/Projektas/Bin/CMakeFiles/ALL_BUILD.dir
+C:/Users/Base/Desktop/GitProjektas/Projektas/Bin/CMakeFiles/ZERO_CHECK.dir

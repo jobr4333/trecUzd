@@ -1,5 +1,0 @@
-Pavarde		    Vardas      	ND1  ND2   ND3  ND4  ND5  Egzaminas
-Pocius      	Paulius     	8    9     10   6    10   9
-Lochnesas	    Petras       	7    10    8    5    4    6
-Petrauskas	    Ugnius		    7    10    8    5    4    6
-Kolis	    Augustinas   	    10    5     2    4    7   9
