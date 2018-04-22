@@ -4,16 +4,18 @@
 #include "stdafx.h"
 #include "main.h"
 #include "funkcijosSuStruktura.h"
+#include "funkcijosBeStrukturos.h"
 
 vector<studentas> stud;
 vector<studentas> kietas;
 vector<studentas> luzeris;
 
-void skaitymas(int iter) {
+void studentas::skaitymas(int iter) {
 	auto start = std::chrono::high_resolution_clock::now(); //laiko matavimo start
 	ifstream sk("txt/sudentai" + to_string(iter) + ".txt");
 	string tempS, temp;
 	int num{}, t{};
+
 	try {
 		if (!sk.good()) throw 404;
 		else if (sk.peek() == ifstream::traits_type::eof()) throw 0;
@@ -43,27 +45,41 @@ void skaitymas(int iter) {
 			}
 			catch (int errNo) {
 				cout << "Ivyko klaida. Neteisingai ivesti pazymiai arba ju nera. Klaidos NR: " << errNo << endl;
-				exit(2);
+				exit(1);
 			}
 			t++;
 		}
 		sk.close();
+		for (t = 0; t != 10 * pow(10, iter); t++) {
+			try {
+				if (stud[t].pazymiai.size() < 6) { //labai palankiai veikia, nezinau kodel
+					throw 2;
+				}
+			}
+			catch (int errNo) {
+				cout << "Ivyko klaida. Nepakankamai pazymiu faile NR: " << iter+1 << ". eilutes NR: " << t+1 << endl << "Klaidos NR: " << errNo << endl;
+				exit(2);
+			}
+		}
 	}
+
+	
+
 	auto finish = std::chrono::high_resolution_clock::now();//laiko matavimo finish
 	std::chrono::duration<double> elapsed = finish - start;
 	cout << left << setw(40) << "skaitymas vykdymo laikas " << iter << ": " << elapsed.count() << " s" << endl;
 }
 
-bool rikiuotiPagalPavarde(const studentas &a, const studentas &b)
+bool studentas::rikiuotiPagalPavarde(const studentas &a, const studentas &b)
 {
 	return a.pavarde < b.pavarde;
 }
 
-void rikioti() {
-	sort(stud.begin(), stud.end(), rikiuotiPagalPavarde);
-}
+/*void studentas::rikioti() {
+	sort(stud.begin(), stud.end(), &rikiuotiPagalPavarde);
+}*/
 
-void spausdinti(int iter) {
+void studentas::spausdinti(int iter) {
 	int studentuSkaicius = static_cast<int>(round(10 * pow(10, iter)));  //kitame faile bus 10x daugiau studentu
 	ofstream rs("txt/kieti" + to_string(iter) + ".txt");
 	for (size_t i = 0; i != kietas.size(); ++i) {
@@ -78,11 +94,11 @@ void spausdinti(int iter) {
 	kietas.clear();
 }
 
-void sunaikinti() {
+void studentas::sunaikinti() {
 	stud.clear();
 }
 
-void irasytiFailan(int pazymiuSkaicius, int iter) {
+void studentas::irasytiFailan(int pazymiuSkaicius, int iter) {
 	auto start = std::chrono::high_resolution_clock::now(); //laiko matavimo start
 	int studentuSkaicius = static_cast<int>(round(10 * pow(10, iter)));  //kitame faile bus 10x daugiau studentu
 
@@ -103,7 +119,7 @@ void irasytiFailan(int pazymiuSkaicius, int iter) {
 	cout << left << setw(40) << "irasytiFailan vykdymo laikas " << iter << ": " << elapsed.count() << " s" << endl;
 }
 
-void skaiciuotiGalutiniBala(int pazymiuSkaicius, int iter) {
+void studentas::skaiciuotiGalutiniBala(int pazymiuSkaicius, int iter) {
 	auto start = std::chrono::high_resolution_clock::now(); //laiko matavimo start
 	int studentuSkaicius = static_cast<int>(round(10 * pow(10, iter)));
 	float vid{};
@@ -121,7 +137,7 @@ void skaiciuotiGalutiniBala(int pazymiuSkaicius, int iter) {
 	cout << left << setw(40) << "skaiciuotiGalutiniBala vykdymo laikas " << iter << ": " << elapsed.count() << " s" << endl;
 }
 
-void kietasArNe(int pazymiuSkaicius, int iter, int i) {
+void studentas::kietasArNe(int pazymiuSkaicius, int iter, int i) {
 	auto start = std::chrono::high_resolution_clock::now(); //laiko matavimo start
 	int studentuSkaicius = static_cast<int>(round(10 * pow(10, iter)));
 	for (size_t p = 0; p != studentuSkaicius; ++p) {

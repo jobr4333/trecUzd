@@ -28,14 +28,4 @@ using std::exception;
 using std::to_string;
 using std::left;
 
-void skaitymas(int iter);
-void rikioti();
-bool rikiuotiPagalPavarde(const studentas &a, const studentas &b);
-void spausdinti(int iter);
-void irasytiFailan(int pazymiuSkaicius, int iter);
-int randomPazymys();
-void sunaikinti();
-void skaiciuotiGalutiniBala(int pazymiuSkaicius, int iter);
-void kietasArNe(int pazymiuSkaicius, int iter, int i);
-
 #endif //INC_2_4_CLION_FUNKCIJOSSUSTRUKTURA_H

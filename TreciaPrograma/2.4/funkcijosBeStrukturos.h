@@ -12,4 +12,6 @@
 using std::ofstream;
 using std::to_string;
 
+int randomPazymys();
+
 #endif //INC_FUNKCIJOSBESTRUKTUROS_H

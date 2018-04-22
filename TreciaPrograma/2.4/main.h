@@ -25,12 +25,31 @@ using std::copy_if;
 using std::remove_if;
 using std::back_inserter;
 
-struct studentas {
+/*struct studentas {
 	string vardas;
 	string pavarde;
 	vector <int> pazymiai;
 	int egz;
 	double vidurkis{}, mediana{}, galBalas{};
+};*/
+
+class studentas {
+	private:
+		string vardas;
+		string pavarde;
+		vector <int> pazymiai;
+		double vidurkis{}, mediana{}, galBalas{};
+
+	public: 
+		void studentas::skaitymas(int iter);
+		void studentas::rikioti();
+		bool studentas::rikiuotiPagalPavarde(const studentas &a, const studentas &b);
+		void studentas::spausdinti(int iter);
+		void studentas::irasytiFailan(int pazymiuSkaicius, int iter);
+		void studentas::sunaikinti();
+		void studentas::skaiciuotiGalutiniBala(int pazymiuSkaicius, int iter);
+		void studentas::kietasArNe(int pazymiuSkaicius, int iter, int i);
+
 };
 
 #endif // MAIN_H_INCLUDED
