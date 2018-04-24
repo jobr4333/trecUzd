@@ -42,7 +42,7 @@ class studentas {
 
 	public: 
 		void studentas::skaitymas(int iter);
-		void studentas::rikioti();
+		//void studentas::rikioti();
 		bool studentas::rikiuotiPagalPavarde(const studentas &a, const studentas &b);
 		void studentas::spausdinti(int iter);
 		void studentas::irasytiFailan(int pazymiuSkaicius, int iter);
@@ -50,6 +50,13 @@ class studentas {
 		void studentas::skaiciuotiGalutiniBala(int pazymiuSkaicius, int iter);
 		void studentas::kietasArNe(int pazymiuSkaicius, int iter, int i);
 
+		studentas() {
+			vardas = "", pavarde = "", vidurkis = 0, mediana = 0, galBalas = 0;
+		};
+
+		studentas(string vard, string pavard, vector<int> paz, double vidurk, double median, double galBal) {
+			vardas = vard, pavarde = pavard, pazymiai = paz, vidurkis = vidurk, mediana = median, galBalas = galBal;
+		};
 };
 
 #endif // MAIN_H_INCLUDED

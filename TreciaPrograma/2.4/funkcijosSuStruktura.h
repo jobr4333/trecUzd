@@ -2,8 +2,7 @@
 // Created by Base on 2018-03-20.
 //
 
-#ifndef INC_2_4_CLION_FUNKCIJOSSUSTRUKTURA_H
-#define INC_2_4_CLION_FUNKCIJOSSUSTRUKTURA_H
+#pragma once
 
 #include <iostream>
 #include <iomanip>
@@ -28,4 +27,3 @@ using std::exception;
 using std::to_string;
 using std::left;
 
-#endif //INC_2_4_CLION_FUNKCIJOSSUSTRUKTURA_H
