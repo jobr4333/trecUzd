@@ -2,7 +2,7 @@
 // Created by Base on 2018-03-20.
 //
 #include "stdafx.h"
-#include "main.h"
+#include "studentas.h"
 #include "funkcijosSuStruktura.h"
 #include "funkcijosBeStrukturos.h"
 
@@ -70,14 +70,14 @@ void studentas::skaitymas(int iter) {
 	cout << left << setw(40) << "skaitymas vykdymo laikas " << iter << ": " << elapsed.count() << " s" << endl;
 }
 
-bool studentas::rikiuotiPagalPavarde(const studentas &a, const studentas &b)
+bool studentas::rikiuotiPagalPavarde(studentas& a, studentas& b)
 {
-	return a.pavarde < b.pavarde;
+	return a.Pavarde() < b.Pavarde();
 }
 
-/*void studentas::rikioti() {
-	sort(stud.begin(), stud.end(), &rikiuotiPagalPavarde);
-}*/
+void studentas::rikioti() {
+	/*sort(stud.begin(), stud.end(), rikiuotiPagalPavarde);*/
+}
 
 void studentas::spausdinti(int iter) {
 	int studentuSkaicius = static_cast<int>(round(10 * pow(10, iter)));  //kitame faile bus 10x daugiau studentu
